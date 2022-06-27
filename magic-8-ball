@@ -1,0 +1,6 @@
+import random
+messages=['Its certain','Yes definately','Ask again later',
+          'My reply is no','Outlook no so good','Very doubtfull',
+          'Concentrate and ask again',
+          'Reply hazy try again']
+print(messages[random.randint(0,len(messages)-1)])
