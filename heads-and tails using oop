@@ -1,0 +1,13 @@
+import random
+class Coin:
+    def __init__ (self):
+        self.sideUp = "Tails"
+    def toss(self):
+        randomFlip = random.randrange(0,2)
+        if randomFlip == 0:
+            self.sideUp = "Tails"
+        else:
+            self.sideUp = "Heads"
+coin = Coin()
+coin.toss()
+print(coin.sideUp)
