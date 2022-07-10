@@ -1,0 +1,6 @@
+from googlesearch import *
+import webbrowser
+query = input("Input your query:")
+chrome_path = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
+for url in search(query):
+    webbrowser.open("https://google.com/search?q=%s" % query)
